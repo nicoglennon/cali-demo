@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title></title>
+  <title>Contact</title>
 </head>
 <body>
   <header>
@@ -10,19 +10,19 @@
      <nav>
        <a href="index.html">home</a> |
        <a href="location.html">location</a> |
-       <a href="contact.html">contact</a> |
+       <a href="contact.html">contact</a> 
      </nav>
     </div>
   </header>
     <div>
-      <img src="images/cali-plaza.jpg" height="500" width="640">
+      <img src="images/cali-plaza.jpg" height="500" width="640" alt="plaza in cali">
       <p><em>Image by <a href="https://www.flickr.com/photos/therese_beck/9131033744/in/photolist-eUSWdh-7RySFq-ymaD58-2fQmRi-9shTAu-48HBEN-9Pqcqe-rVNsxM-4F6Xsw-6RAhd6-5u75xf-ebX2kQ-99r2Qj-dvYSw5-ebRmhi-tJXnwd-ub6SH-4e9JRU-e1doNP-4zk2Zb-bnJdQP-ebX125-4zgd36-7KTvCY-8gLqJp-pyVREW-QzUDHn-dHpXKL-i9qMcg-dwFwhj-fonKY3-ecaaM7-4JgBvn-6r7nhh-ryGj9X-4HdTVG-ebX2fJ-rsm6vr-dwcoEJ-ebX1VJ-5u2Fut-ebWYJw-pAFpfT-5Lavxf-bByrfa-5u2JFx-bnJe1x-rp8rYe-ebRmvp-4UGiWi">Therese Beck</a> on Flickr.</em></p>
     </div>
 
   <div>
     <h2>Please complete below form.</h2>
   </div>
-  <form name="cali-form"  action="form-submit.html" method="post">
+  <form name="cali-form"  action="http://httpbin.org/post" method="post">
     <fieldset>
     <div>
       <label>First Name: </label>
@@ -36,18 +36,18 @@
 
     <div>
       <label>Please check box if you enjoyed the city:</label>
-      <input type="checkbox" name="enjoyed-cali">
+      <input type="checkbox" name="enjoyed-cali" value="true">
     </div>
       
       <div>
         <label>Select reason for contacting us: </label>
-        <select>
-          <option>-Select-</option>
-          <option>Had an unbelievable time in Cali</option>
-          <option>Absolutely loved the local food and dining</option>
-          <option>The mountain ranges were beyond spectacular</option>
-          <option>Met my life soulmate and got married here</option>
-          <option>*All of the above</option>
+        <select name="reason-for-contact">
+          <option value="void">-Select-</option>
+          <option value="unbelievable">Had an unbelievable time in Cali</option>
+          <option value="food">Absolutely loved the local food and dining</option>
+          <option value="mountains">The mountain ranges were beyond spectacular</option>
+          <option value="married">Met my life soulmate and got married here</option>
+          <option value="all">*All of the above</option>
         </select>
       </div>
     </fieldset>
@@ -55,7 +55,7 @@
     <fieldset>
       <div>
         <label>Please write your message below: <br></label>
-        <textarea rows="8" cols="50" placeholder="-Message-"></textarea>
+        <textarea rows="8" cols="50" placeholder="-Message-" name="message"></textarea>
       </div>
     </fieldset>
 

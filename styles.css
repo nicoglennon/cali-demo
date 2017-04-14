@@ -1,3 +1,158 @@
 body {
-  background: blue;
+  max-width: 1000px;
+  min-width: 320px;
+  margin: auto;
+  font-family: "Helvetica", Times, Serif;
+  font-weight: lighter;
 }
+
+header {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: #F8F8FF;
+}
+
+main {
+  width: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  background-color: #F0F8FF;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+
+figure {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 2px;
+}
+
+
+textarea {
+  width: 95%;
+
+}
+
+fieldset {
+  width: 90%;
+  margin: auto;
+}
+
+select {
+  width: 90%;
+  background-color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: auto;
+  padding: 5px;
+  font-size: 1.2em;
+}
+
+#button-container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+ 
+}
+
+button {
+  width: 40%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+
+.main-title {
+  font-weight: bolder;
+  font-size: 40px;
+  padding-bottom: 2px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+
+}
+
+.navigate a {
+  background-color: #E1F8FF;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+#nav-1:hover, #nav-2:hover, #nav-3:hover {
+  background-color: #ECE6E6;
+}
+
+a:link{
+  color: #000000;
+}
+
+a:visited{
+  color: #F88379;
+
+}
+
+.banner {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 548px) {
+  #nav-1, #nav-2, #nav-3 { 
+    width: 80%;
+    
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  figure {
+    display: none;
+  }
+
+  nav {
+    padding-bottom: 5px;
+  }
+
+  table {
+    font-size: 0.8em;
+    width: 100%;
+  }
+}
+
+

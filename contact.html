@@ -3,76 +3,85 @@
 <head>
   <title>Contact</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8" />
 </head>
+
 <body>
   <header>
     <div>
-     <h1>Contact</h1> 
-     <nav>
-       <a href="index.html">home</a> |
-       <a href="location.html">location</a> |
-       <a href="contact.html">contact</a> 
+     <h1 class="main-title">CONTACT</h1> 
+     <nav class="navigate">
+       <a href="index.html" id="nav-1">home</a> 
+       <a href="location.html" id="nav-2">location</a> 
+       <a href="contact.html" id="nav-3">contact</a> 
      </nav>
     </div>
   </header>
-    <div>
+
+  <main>
+    <figure>
       <img src="images/cali-plaza.jpg" height="500" width="640" alt="plaza in cali">
-      <p><em>Image by <a href="https://www.flickr.com/photos/therese_beck/9131033744/in/photolist-eUSWdh-7RySFq-ymaD58-2fQmRi-9shTAu-48HBEN-9Pqcqe-rVNsxM-4F6Xsw-6RAhd6-5u75xf-ebX2kQ-99r2Qj-dvYSw5-ebRmhi-tJXnwd-ub6SH-4e9JRU-e1doNP-4zk2Zb-bnJdQP-ebX125-4zgd36-7KTvCY-8gLqJp-pyVREW-QzUDHn-dHpXKL-i9qMcg-dwFwhj-fonKY3-ecaaM7-4JgBvn-6r7nhh-ryGj9X-4HdTVG-ebX2fJ-rsm6vr-dwcoEJ-ebX1VJ-5u2Fut-ebWYJw-pAFpfT-5Lavxf-bByrfa-5u2JFx-bnJe1x-rp8rYe-ebRmvp-4UGiWi">Therese Beck</a> on Flickr.</em></p>
-    </div>
-
-  <div>
-    <h2>Please complete below form.</h2>
-  </div>
-  <form name="cali-form"  action="http://httpbin.org/post" method="post">
-    <fieldset>
-    <div>
-      <label>First Name: </label>
-      <input type="text" name="firstName" placeholder="John" >
-    </div>
-
-    <div>
-      <label>Last Name: </label>
-      <input type="text" name="lastName" placeholder="Appleseed" >
-    </div>
-
-    <div>
-      <label>Please check box if you enjoyed the city:</label>
-      <input type="checkbox" name="enjoyed-cali" value="true">
-    </div>
+      <figcaption><em>Image by <a href="https://www.flickr.com/photos/therese_beck/9131033744/in/photolist-eUSWdh-7RySFq-ymaD58-2fQmRi-9shTAu-48HBEN-9Pqcqe-rVNsxM-4F6Xsw-6RAhd6-5u75xf-ebX2kQ-99r2Qj-dvYSw5-ebRmhi-tJXnwd-ub6SH-4e9JRU-e1doNP-4zk2Zb-bnJdQP-ebX125-4zgd36-7KTvCY-8gLqJp-pyVREW-QzUDHn-dHpXKL-i9qMcg-dwFwhj-fonKY3-ecaaM7-4JgBvn-6r7nhh-ryGj9X-4HdTVG-ebX2fJ-rsm6vr-dwcoEJ-ebX1VJ-5u2Fut-ebWYJw-pAFpfT-5Lavxf-bByrfa-5u2JFx-bnJe1x-rp8rYe-ebRmvp-4UGiWi">Therese Beck</a> on Flickr.</em></figcaption>
+        
+    </figure>
       
-      <div>
-        <label>Select reason for contacting us: </label>
-        <select name="reason-for-contact">
-          <option value="void">-Select-</option>
-          <option value="unbelievable">Had an unbelievable time in Cali</option>
-          <option value="food">Absolutely loved the local food and dining</option>
-          <option value="mountains">The mountain ranges were beyond spectacular</option>
-          <option value="married">Met my life soulmate and got married here</option>
-          <option value="all">*All of the above</option>
-        </select>
-      </div>
-    </fieldset>
-
-    <fieldset>
-      <div>
-        <label>Please write your message below: <br></label>
-        <textarea rows="8" cols="50" placeholder="-Message-" name="message"></textarea>
-      </div>
-    </fieldset>
 
     <div>
-       <button type="submit">Save and Submit</button>
+      <h2 class="banner">Please complete below form:</h2>
     </div>
-   
-  </form>
+    <form name="cali-form"  action="http://httpbin.org/post" method="post">
+      <fieldset>
+      <div>
+        <label>First Name: </label>
+        <input type="text" name="firstName" placeholder="John" >
+      </div>
 
-  <div>
-     <footer>
-       <p><em>Created by Nico Glennon, <br>
-       2017 All rights reserved.
-       </em></p>
-     </footer>
-  </div>
+      <div>
+        <label>Last Name: </label>
+        <input type="text" name="lastName" placeholder="Appleseed" >
+      </div>
+
+      <div>
+        <label>Please check box if you enjoyed the city:</label>
+        <input type="checkbox" name="enjoyed-cali" value="true">
+      </div>
+        
+        <div>
+          <label>Select reason for contacting us: </label>
+          <select name="reason-for-contact">
+            <option value="void">-Select-</option>
+            <option value="unbelievable">Had an unbelievable time in Cali</option>
+            <option value="food">Absolutely loved the local food and dining</option>
+            <option value="mountains">The mountain ranges were beyond spectacular</option>
+            <option value="married">Met my life soulmate and got married here</option>
+            <option value="all">*All of the above</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <label>Please write your message below: <br></label>
+          <textarea rows="8" cols="50" placeholder="-Message-" name="message"></textarea>
+        </div>
+      </fieldset>
+
+      <div id="button-container">
+         <button type="submit">Save and Submit</button>
+      </div>
+     
+    </form>
+
+    <div>
+       <footer>
+         <p><em>Created by Nico Glennon, <br>
+         2017 All rights reserved.
+         </em></p>
+       </footer>
+    </div>
+  </main>
+  
  
 
 </body>

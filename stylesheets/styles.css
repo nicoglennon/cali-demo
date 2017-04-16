@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 /** { outline: dotted red 1px }*/
 
@@ -6,8 +6,8 @@ body {
   max-width: 1000px;
   min-width: 320px;
   margin: auto;
-  font-family: "Nunito", Times, Serif;
-  font-weight: normal;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
 }
 
 header {
@@ -99,6 +99,7 @@ button {
   padding-bottom: 2px;
   margin-top: 90px;
   margin-bottom: 2px;
+  font-weight: 700;
 }
 
 .navigate a {
@@ -161,7 +162,11 @@ a:visited {
 
   .main-title {
     margin-top: 170px;
-    font-size: 55px;
+    font-size: 45px;
+  }
+
+  .banner {
+    font-size: 35px;
   }
   
 }

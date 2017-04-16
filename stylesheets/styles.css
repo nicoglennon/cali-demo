@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /** { outline: dotted red 1px }*/
 
@@ -6,7 +6,7 @@ body {
   max-width: 1000px;
   min-width: 320px;
   margin: auto;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
 
@@ -23,13 +23,14 @@ header {
 nav {
   position: fixed;
   max-width: 1000px;
+  min-width: 320px;
   top: 0px;
   width: 100%;
-  padding: 15px 0px;
+  padding: 15px 0px 15px 0px;
   margin: auto;
   font-size: 20px;
   background-color: #F8F8FF;
-  border-bottom: solid  #A9A9A9 1px;
+  border-bottom: solid  #D3D3D3 1px;
 }
 
 main {
@@ -144,16 +145,19 @@ a:visited {
   #nav-1,
   #nav-2,
   #nav-3 { 
-    width: 80%;
+    width: 82%;
     display: inline-block;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  nav {
+    padding: 0px 0px 10px 0px;
   }
 
   figure {
     display: none;
   }
-
 
   table {
     font-size: 0.7em;
@@ -162,13 +166,12 @@ a:visited {
 
   .main-title {
     margin-top: 170px;
-    font-size: 45px;
+    font-size: 55px;
   }
 
   .banner {
     font-size: 35px;
   }
-  
 }
 
 

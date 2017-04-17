@@ -101,6 +101,7 @@ button {
   margin-top: 90px;
   margin-bottom: 2px;
   font-weight: 700;
+  letter-spacing: 0px;
 }
 
 .navigate a {
@@ -168,7 +169,6 @@ a:visited {
     margin-top: 170px;
     font-size: 55px;
     font-weight: bold;
-    letter-spacing: -2px;
   }
 
   .banner {
